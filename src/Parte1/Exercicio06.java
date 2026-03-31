@@ -1,4 +1,3 @@
-
 /*
 	Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e
 	mostre:
@@ -8,6 +7,8 @@
 	d) a área do quadrado que tem lado B.
 	e) a área do retângulo que tem lados A e B.
  */
+package Parte1;
+
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -16,41 +17,39 @@ public class Exercicio06 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
-		
-		double a;	
-		double b;	
-		double c;	
+
+		double a;
+		double b;
+		double c;
 		double pi = 3.14159;
-		
+
 		double areaTriangulo;
 		double areaCirculo;
 		double areaTrapezio;
 		double areaQuadrado;
 		double areaRetangulo;
-		
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.println("Digite o valor de A:");
-		a= sc.nextDouble();
+		a = sc.nextDouble();
 		System.out.println("Digite o valor de B:");
-		b= sc.nextDouble();
+		b = sc.nextDouble();
 		System.out.println("Digite o valor de C:");
-		c= sc.nextDouble();
-		
-		areaTriangulo = (a * c ) / 2;
-		areaCirculo = (pi * Math.pow(c,2));
-		areaTrapezio = ((a+b)*c) / 2;
-		areaQuadrado = Math.pow(b,2);
-		areaRetangulo =a*b;
-		
-		
+		c = sc.nextDouble();
+
+		areaTriangulo = (a * c) / 2;
+		areaCirculo = (pi * Math.pow(c, 2));
+		areaTrapezio = ((a + b) * c) / 2;
+		areaQuadrado = Math.pow(b, 2);
+		areaRetangulo = a * b;
+
 		sc.close();
-		System.out.printf("TRIANGULO: %.3f%n ",areaTriangulo);
-		System.out.printf("CIRCULO: %.3f%n ",areaCirculo);
-		System.out.printf("TRAPÉZIO: %.3f%n ",areaTrapezio);
-		System.out.printf("QUADRADO: %.3f%n ",areaQuadrado);
-		System.out.printf("RETANGULO: %.3f%n ",areaRetangulo);
+		System.out.printf("TRIANGULO: %.3f%n ", areaTriangulo);
+		System.out.printf("CIRCULO: %.3f%n ", areaCirculo);
+		System.out.printf("TRAPÉZIO: %.3f%n ", areaTrapezio);
+		System.out.printf("QUADRADO: %.3f%n ", areaQuadrado);
+		System.out.printf("RETANGULO: %.3f%n ", areaRetangulo);
 
 	}
 

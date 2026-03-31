@@ -1,3 +1,4 @@
+package Parte1;
 import java.util.Scanner;
 
 /*
@@ -9,12 +10,12 @@ de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
 public class Exercicio03 {
 
 	public static void main(String[] args) {
-		int a ;
-		int b ;
-		int c ;
-		int d ;
+		int a;
+		int b;
+		int c;
+		int d;
 		double diferenca;
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Digite o primeiro Valor:");
@@ -25,12 +26,12 @@ public class Exercicio03 {
 		c = sc.nextInt();
 		System.out.println("Digite o quarto Valor:");
 		d = sc.nextInt();
-		
-		diferenca = (a*b - c*d);
-		
+
+		diferenca = (a * b - c * d);
+
 		sc.close();
 		System.out.printf("A Diferença é = %.0f%n ", diferenca);
-		
+
 	}
 
 }
