@@ -14,12 +14,10 @@ public class Exercicio06 {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		double valor;
-		
+
 		
 		System.out.println("Digite o Valor:");
-		valor = sc.nextDouble();
+		double valor = sc.nextDouble();
 		
 		
 		if (valor < 0 || valor > 100) {
